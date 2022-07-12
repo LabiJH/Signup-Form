@@ -43,7 +43,7 @@
                 </section>
                 <form id="form">
                     <section id="formJungle">
-                        <p>We just need a bit Information from you..</p>
+                        <p>We just need a bit of Information from you..</p>
                         <!-- Form HTML -->
 
                         <div id="row">
@@ -51,6 +51,7 @@
                                 <label for="fname">First Name</label>
                                 <input type="text" id="fname" required pattern="[A-Za-z]+" maxlength="20"
                                     autocomplete="off">
+                                    <div class="validCheck">Valid</div>
                             </div>
                             <div class="cell">
                                 <label for="lname">Last Name</label>
@@ -62,8 +63,7 @@
                         <div id="row">
                             <div class="cell">
                                 <label for="emailInput">E-Mail</label>
-                                <input type="email" id="emailInput" required maxlength="20"
-                                    autocomplete="off">
+                                <input type="email" id="emailInput" required maxlength="20" autocomplete="off">
                             </div>
                             <div class="cell">
                                 <label for="pNumber">Phone Number</label>
@@ -84,17 +84,18 @@
                                     maxlength="20" autocomplete="off">
                             </div>
                         </div>
-                        
                     </section>
                     <div id="formFooter">
                         <input type="submit" value="Sign Up" id="submitBtn">
                         <p>Already have an Account? <span class="teaFont"><a href="#">Log in.</a></span></p>
                     </div>
-
                 </form>
             </div>
         </section>
         <!--Right Page HTML END-->
+    </div>
+    <div id="stickyMenu">
+        Back to <a href="https://github.com/LabiJH">GitHub</a>?
     </div>
     <script src="app.js"></script>
 </body>
