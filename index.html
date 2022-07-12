@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
+    <!--Font Import Ende-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Chashitsu - Traditional Teahouse</title>
+</head>
+
+<body>
+    <div id="page">
+        <!--Left Page HTML-->
+        <section id="pageContainerLeft">
+            <div id="titleBox">
+                Chashitsu<br>
+                <p id="subText">茶室</p>
+            </div>
+            <footer id="leftFooter">
+                赤い アーチ
+            </footer>
+        </section>
+        <!--Left Page HTML END-->
+
+        <!--Right Page HTML-->
+        <section id="pageContainerRight">
+            <div id="rightWrapper">
+                <section id="rightHeader">
+                    <p>Welcome to our Teahouse! We wish to offer you the best Overseas <span class="teaFont">Tea</span>
+                        Service available.</p>
+                    <p>We hope that you will enjoy our Teahouse to the fullest.</p><br>
+                    <p>Sign up <span class="teaFont">now!</span></p>
+                </section>
+                <form id="form">
+                    <section id="formJungle">
+                        <p>We just need a bit Information from you..</p>
+                        <!-- Form HTML -->
+
+                        <div id="row">
+                            <div class="cell">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" required pattern="[A-Za-z]+" maxlength="20"
+                                    autocomplete="off">
+                            </div>
+                            <div class="cell">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" required pattern="[A-Za-z]+" maxlength="20"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <!-- ROW 2 -->
+                        <div id="row">
+                            <div class="cell">
+                                <label for="emailInput">E-Mail</label>
+                                <input type="email" id="emailInput" required maxlength="20"
+                                    autocomplete="off">
+                            </div>
+                            <div class="cell">
+                                <label for="pNumber">Phone Number</label>
+                                <input type="tel" id="pNumber" required pattern="[0-9]{0-20}" maxlength="20"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <!-- ROW 3 -->
+                        <div id="row">
+                            <div class="cell">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" required pattern="[A-Za-z]{0-20}" maxlength="20"
+                                    autocomplete="off">
+                            </div>
+                            <div class="cell">
+                                <label for="passwordConfirm">Confirm Password</label>
+                                <input type="password" id="passwordConfirm" required pattern="[A-Za-z]{0-20}"
+                                    maxlength="20" autocomplete="off">
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <div id="formFooter">
+                        <input type="submit" value="Sign Up" id="submitBtn">
+                        <p>Already have an Account? <span class="teaFont"><a href="#">Log in.</a></span></p>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <!--Right Page HTML END-->
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

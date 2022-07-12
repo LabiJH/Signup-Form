@@ -1,0 +1,162 @@
+:root{
+    --background-color-primary: #faf0d7;
+    --background-color-secondary: rgb(255, 252, 233);
+    --tea-font:#6faa48;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+#page{
+    display: flex;
+}
+
+.teaFont{
+    color:var(--tea-font);
+    font-style: italic;
+}
+
+#pageContainerLeft{
+    height: 100vh;
+    position: relative;
+    flex:35%;
+    background-image: url("https://i.redd.it/82smngfjfs251.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#pageContainerRight{
+    flex:65%;
+    background-color: var(--background-color-secondary);
+}
+
+#subText{
+    font-size: 0.5em;
+}
+
+#leftFooter{
+    position: absolute;
+    bottom: 2%;
+    color:var(--background-color-primary);
+    right:5%;
+}
+
+#titleBox{
+    color:rgb(0, 0, 0);
+    width:100%;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    position: absolute;
+    top:25%;
+    font-family: 'Edu VIC WA NT Beginner', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    background-color:#a7d68780;
+}
+
+#rightWrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Mali", sans-serif, 'Times New Roman', Times, serif;
+}
+
+#rightHeader{
+    padding:15px;
+    padding-left: 4rem;
+    font-size: 1.5rem;
+}
+
+#formJungle{
+    background-color: var(--background-color-primary);
+    box-shadow: 0 1px 5px rgb(216, 179, 100);
+    padding-top:2rem;
+    font-size: 1.5rem;  
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    
+}
+
+#formJungle input{
+    padding:1.3rem 1rem 0.3rem 0.7rem;
+}
+
+input:valid{
+    border:1px solid lime;
+}
+input:invalid:focus{
+    border:1px solid red;
+}
+
+#formJungle input:focus{
+    outline: 1px solid var(--tea-font);
+}
+
+.cell{
+    position:relative;
+    margin-top: 10px;
+}
+
+#formJungle label{
+    position: absolute;
+    left:0.7rem;
+    top:0.3rem;
+    line-height: 1em;
+    font-size: 0.9rem;
+}
+
+
+#formJungle #row{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+#formFooter{
+    padding:15px;
+    padding-left: 4rem;
+}
+
+#formFooter input{
+    border: none;
+    padding:1.1rem 2.8rem 1.1rem 2.8rem;
+    background-color: #6bac40;
+    color: beige;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(158, 160, 159);
+    font-size: 1rem;
+}
+
+#formFooter input:hover{
+    background-color:rgb(83, 128, 53);
+    cursor:pointer;
+}
+
+#formFooter p{
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+#formFooter a{
+    text-decoration: none;
+    color:var(--tea-font);
+}
+
+#formFooter a:visited{
+    color:var(--tea-font);
+}
+
+
+
+@media (max-width:800px){
+    #formJungle #row{
+        flex-direction: column;
+        gap:0px;
+        align-items: center;
+    }
+
+    #formJungle p{
+        text-align: center;
+    }
+}
