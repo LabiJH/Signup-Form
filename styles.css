@@ -84,18 +84,6 @@
 #formJungle input{
     padding:1.3rem 1rem 0.3rem 0.7rem;
     margin-bottom: 0.5rem;
-    
-}
-
-input:valid{
-    border:1px solid #99CC99;
-}
-input:invalid:focus{
-    border:1px solid red;
-}
-
-#formJungle input:focus{
-    outline: 1px solid var(--tea-font);
 }
 
 .cell{
